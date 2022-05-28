@@ -1,0 +1,54 @@
+<div class="containerr">
+  <div class="container1">
+    <div class="container2">
+      <div class="textrgt">
+        <h1>WithDraw</h1>
+      </div>
+      <div class="dropdown-term">
+        <p-dropdown [options]="termList" optionLabel="name"></p-dropdown>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="avatar">
+            <img
+              src="https://c.tenor.com/j2aVLrYfEBsAAAAC/jett-valroant.gif"
+              alt=""
+            />
+          </div>
+
+          <div class="profile">
+            <h3>{{ this.studentId }}</h3>
+            <p>{{ this.type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardtest">
+    <div class="Card-registration">
+      <p-table [value]="Courses.courses">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Course Id</th>
+            <th>Sec</th>
+            <th>Term</th>
+            <th>Withdraw</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-course ; let-i of index>
+          <tr>
+            <td>{{ course.courseId }}</td>
+            <td>{{ course.sec }}</td>
+            <td>{{ course.term }}</td>
+            <td>
+              <button type="submit" class="btn-select">withDraw</button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

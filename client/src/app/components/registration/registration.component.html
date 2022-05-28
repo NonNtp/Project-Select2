@@ -1,0 +1,75 @@
+<div class="containerr">
+  <div class="container1">
+    <div class="container2">
+      <div class="textrgt">
+        <h1>Registration</h1>
+      </div>
+      <div class="dropdown-term">
+        <p-dropdown [options]="termList" optionLabel="name"></p-dropdown>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="avatar">
+            <img
+              src="https://c.tenor.com/j2aVLrYfEBsAAAAC/jett-valroant.gif"
+              alt=""
+            />
+          </div>
+
+          <div class="profile">
+            <h3>{{ this.studentId }}</h3>
+            <p>{{ this.type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardtest">
+    <div class="Card-registration">
+      <p-table [value]="Courses.courses">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Subject</th>
+            <th>ID</th>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Credit</th>
+            <th>Sec</th>
+            <th>Teacher</th>
+            <th>Term</th>
+            <th colspan="2" style="padding-left: 100px">Select</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-course ; let-i of index>
+          <tr>
+            <td>{{ course.name }}</td>
+            <td>{{ course.courseId }}</td>
+            <td>{{ course.day }}</td>
+            <td>{{ course.time }}</td>
+            <td>{{ course.credit }}</td>
+            <td>{{ course.sec }}</td>
+            <td>{{ course.teacher }}</td>
+            <td>{{ course.term }}</td>
+            <td>
+              <button
+                class="btn-select"
+                routerLink="/edit/{{ course.courseId }}"
+              >
+                Edit
+              </button>
+              <button
+                class="btn-remove"
+                (click)="removeCourse(course.courseId, i)"
+              >
+                remove
+              </button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

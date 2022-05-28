@@ -1,0 +1,132 @@
+<div class="containerr">
+  <div class="container1">
+    <div class="container2">
+      <div class="textrgt">
+        <h1>Add-Admin</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="content">
+          <div class="avatar">
+            <img
+              src="https://c.tenor.com/j2aVLrYfEBsAAAAC/jett-valroant.gif"
+              alt=""
+            />
+          </div>
+
+          <div class="profile">
+            <h3>{{ this.studentId }}</h3>
+            <p>{{ this.type }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cardtest">
+    <div class="Card-Add-Admin">
+      <div class="topic">
+        <h2 style="color: cornsilk" class="topichead">Subject Details</h2>
+      </div>
+      <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+        <div class="inputarea">
+          <div class="inputcontroll">
+            <div class="fontlg">
+              <p>Subject</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Subject"
+                formControlName="name"
+                required
+              />
+            </div>
+
+            <div class="fontlg">
+              <p>Subject ID</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Subject ID"
+                formControlName="courseId"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="inputcontroll">
+            <div class="fontlg">
+              <p>Day</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Day"
+                formControlName="day"
+                required
+              />
+            </div>
+
+            <div class="fontlg">
+              <p>Time</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Time"
+                formControlName="time"
+                required
+              />
+            </div>
+          </div>
+          <div class="inputcontroll">
+            <div class="fontlg">
+              <p>Credit</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Credit"
+                formControlName="credit"
+                required
+              />
+            </div>
+            <div class="fontlg">
+              <p>Sec</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Sec"
+                formControlName="sec"
+                required
+              />
+            </div>
+          </div>
+          <div class="inputcontroll">
+            <div class="fontlg">
+              <p>Teacher</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Teacher"
+                formControlName="teacher"
+                required
+              />
+            </div>
+            <div class="fontlg">
+              <p>Term</p>
+              <input
+                type="text"
+                class="textbox"
+                placeholder="Term"
+                formControlName="term"
+                required
+              />
+            </div>
+          </div>
+          <div class="submitcontroll">
+            <button type="submit" class="btn-submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

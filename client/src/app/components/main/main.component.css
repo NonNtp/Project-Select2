@@ -1,0 +1,132 @@
+.card {
+  display: flex;
+  position: absolute;
+  width: 50%;
+  height: 80%;
+  left: 303px;
+  top: 127px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-top: 30px;
+}
+.body-card {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: #d5dae3;
+}
+.card-profile {
+  display: flex;
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  left: 1300px;
+  top: 127px;
+  margin-top: 30px;
+
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 18px;
+}
+.textmain {
+  margin-left: 303px;
+  margin-top: 80px;
+}
+
+.text-in {
+  margin-top: 30px;
+  margin-left: 70px;
+}
+.text-info {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 120px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  transform: translateX(600%);
+  margin-top: 20px;
+
+
+}
+.avatar img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.column{
+  display: flex;
+}
+.text-pf{
+display: block;
+width: 100%;
+position: absolute;
+transform: translateX(-25%);
+text-align: end;
+line-height: 5px;
+margin-top: 14px;
+}
+
+.wrapper .center-line{
+position:absolute;
+height: 60%;
+width: 1px;
+background: #A098AE;
+left: 10%;
+margin-top: 2%;
+}
+
+.wrapper .row{
+  display: flex;
+}
+.wrapper .row-1{
+  justify-content: flex-end;
+}
+
+.row section .details .title{
+  font-size: 18px;
+  font-weight: bold;
+
+}
+.row section p{
+  margin: 10px 0 17px 0;
+}
+.icon{
+  height: 10px;
+  width: 10px;
+  background: #fff;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 5px;
+  margin-left: 5px;
+
+}
+.f-icon{
+  position: relative;
+  background: #4D44B5;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  border-radius: 50%;
+  margin-top: 19px;
+  margin-left: -164px;
+
+}
+.details{
+  margin-top: -20px;
+  transform: translateX(-50%);
+}

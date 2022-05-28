@@ -1,0 +1,52 @@
+<div>
+  <div class="area"></div>
+  <nav class="main-menu">
+    <ul>
+      <li class="has-subnav">
+        <a href="/main">
+          <span class="nav-text"> My profile </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="/courses">
+          <span class="nav-text"> Courses </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="/my-course">
+          <span class="nav-text"> My-Course </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="/Withdrawal">
+          <span class="nav-text"> Withdrawal </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="/Registration">
+          <span class="nav-text"> Registration </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="add">
+          <span class="nav-text"> Add </span>
+        </a>
+      </li>
+      <li class="has-subnav">
+        <a href="teacher-course">
+          <span class="nav-text"> Teacher-Course </span>
+        </a>
+      </li>
+    </ul>
+
+    <ul class="logout">
+      <li>
+        <a href="#" (click)="logout()">
+          <span class="nav-text"> Logout </span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <router-outlet></router-outlet>
+</div>

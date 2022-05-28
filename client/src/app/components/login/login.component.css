@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form.container{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(233, 233, 233);
+    padding-left: 50px;
+    padding-top: 70px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    
+}
+h1{
+    margin-bottom: 50px;
+    color: rgb(70, 87, 247);
+
+}
+input{
+    
+    border: none;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0 10px;
+    font-size: 1rem;
+    outline: none;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.textbox{
+    border: 1px solid rgba(255,255,255,0.4);
+
+}
+
+
+
+.btn-submit{
+    background-color:rgb(70, 87, 247) ;
+    color: aliceblue;
+    
+}
+
+.btn-submit:hover{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.imglogin{
+    width: 500px;
+    height: 560px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
